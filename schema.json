@@ -14,36 +14,39 @@
       "items": {
         "type": "object",
         "properties": {
-          "sysContraint": {
-            "type": "object",
-            "properties": {
-              "os": {
-                "type": "string"
+          "sysContraints": {
+            "type": "array",
+            "item": {
+              "type": "object",
+              "properties": {
+                "os": {
+                  "type": "string"
+                },
+                "flavor": {
+                  "type": "string"
+                },
+                "arch": {
+                  "type": "string"
+                }
               },
-              "flavor": {
-                "type": "string"
-              },
-              "arch": {
-                "type": "string"
-              }
-            },
-            "anyOf": [
-              {
-                "required": [
-                  "os"
-                ]
-              },
-              {
-                "required": [
-                  "flavor"
-                ]
-              },
-              {
-                "required": [
-                  "arch"
-                ]
-              }
-            ]
+              "anyOf": [
+                {
+                  "required": [
+                    "os"
+                  ]
+                },
+                {
+                  "required": [
+                    "flavor"
+                  ]
+                },
+                {
+                  "required": [
+                    "arch"
+                  ]
+                }
+              ]
+            }
           },
           "pkgConstraint": {
             "type": "object",

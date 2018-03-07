@@ -1,0 +1,31 @@
+{
+  "regexp": "\blibcurl\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "libcurl4-openssl-dev"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "redhat"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "libcurl-devel"
+      ],
+      "sysConstraint": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}
