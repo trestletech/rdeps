@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./validate.sh",
-    "lint": "./node_modules/.bin/jsonlint -i schema.json && ./node_modules/.bin/jsonlint deps/*.json -i"
+    "lint": "./node_modules/.bin/jsonlint -i schema.json && sed -i '' -e '$a\\'  schema.json && ./node_modules/.bin/jsonlint deps/*.json -i && sed -i '' -e '$a\\' deps/*.json"
   },
   "repository": {
     "type": "git",
