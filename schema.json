@@ -1,5 +1,5 @@
 {
-  "$schema"  : "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "description": {
@@ -28,9 +28,21 @@
               }
             },
             "anyOf": [
-              { "required": ["os"] },
-              { "required": ["flavor"] },
-              { "required": ["arch"] }
+              {
+                "required": [
+                  "os"
+                ]
+              },
+              {
+                "required": [
+                  "flavor"
+                ]
+              },
+              {
+                "required": [
+                  "arch"
+                ]
+              }
             ]
           },
           "pkgConstraint": {
@@ -50,14 +62,42 @@
               }
             },
             "dependencies": {
-              "minVer": { "not": { "required": ["minVerExclusive"] } },
-              "maxVer": { "not": { "required": ["maxVerExclusive"] } }
+              "minVer": {
+                "not": {
+                  "required": [
+                    "minVerExclusive"
+                  ]
+                }
+              },
+              "maxVer": {
+                "not": {
+                  "required": [
+                    "maxVerExclusive"
+                  ]
+                }
+              }
             },
             "anyOf": [
-              { "required": ["minVer"] },
-              { "required": ["minVerExclusive"] },
-              { "required": ["maxVer"] },
-              { "required": ["maxVerExclusive"] }
+              {
+                "required": [
+                  "minVer"
+                ]
+              },
+              {
+                "required": [
+                  "minVerExclusive"
+                ]
+              },
+              {
+                "required": [
+                  "maxVer"
+                ]
+              },
+              {
+                "required": [
+                  "maxVerExclusive"
+                ]
+              }
             ]
           },
           "sysPkgs": {
