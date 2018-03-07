@@ -1,0 +1,7 @@
+{
+  "regexp": "\bhey\b",
+  "dependencies": [
+    {
+    }
+  ]
+}
