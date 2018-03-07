@@ -3,7 +3,7 @@
   "dependencies": [
     {
       "sysPkgs": [
-        "test"
+        "test2"
       ]
     }
   ]
