@@ -1,0 +1,64 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+		"description": {
+			"type": "string"
+		},
+		"regexp": {
+			"type": "string",
+			"minLength": 1
+		},
+		"dependencies": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"sysContraint": {
+						"type": "object"
+					},
+					"pkgConstraint": {
+						"type": "object",
+						"properties": {
+							"minVer": {
+								"type": "string"
+							},
+							"maxVer": {
+								"type": "string"
+							}
+						}
+					},
+					"sysPkgs": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					},
+					"script": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					}
+				},
+				"oneOf": [
+					{
+						"required": [
+							"sysPkgs"
+						]
+					},
+					{
+						"required": [
+							"script"
+						]
+					}
+				]
+			},
+			"minItems": 1
+		}
+	},
+	"required": [
+		"regexp",
+		"dependencies"
+	]
+}

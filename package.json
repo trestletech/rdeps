@@ -1,0 +1,22 @@
+{
+  "name": "rdeps",
+  "version": "1.0.0",
+  "description": "System for infering R package dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "./validate.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/trestletech/rdeps.git"
+  },
+  "author": "RStudio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trestletech/rdeps/issues"
+  },
+  "homepage": "https://github.com/trestletech/rdeps#readme",
+  "devDependencies": {
+    "ajv-cli": "^3.0.0"
+  }
+}

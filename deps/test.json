@@ -1,0 +1,10 @@
+{
+  "regexp": "\bhey\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "test"
+      ]
+    }
+  ]
+}
