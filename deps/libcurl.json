@@ -10,7 +10,7 @@
           "flavor": "ubuntu"
         },
         {
-          "flavor": "redhat"
+          "flavor": "debian"
         }
       ]
     },
