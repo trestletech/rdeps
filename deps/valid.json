@@ -1,0 +1,15 @@
+{
+  "regexp": "\bhey\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "test2"
+      ],
+      "pkgConstraint": {
+        "minVerExclusive": "123",
+        "maxVer": "321"
+      }
+    }
+  ]
+}
+

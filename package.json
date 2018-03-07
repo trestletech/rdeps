@@ -4,7 +4,8 @@
   "description": "System for infering R package dependencies",
   "main": "index.js",
   "scripts": {
-    "test": "./validate.sh"
+    "test": "./validate.sh",
+    "lint": "./node_modules/.bin/jsonlint -i"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://github.com/trestletech/rdeps#readme",
   "devDependencies": {
-    "ajv-cli": "^3.0.0"
+    "ajv-cli": "^3.0.0",
+    "jsonlint": "^1.6.3"
+  },
+  "dependencies": {
+    "eslint": "^4.18.2",
+    "eslint-plugin-json": "^1.2.0"
   }
 }
