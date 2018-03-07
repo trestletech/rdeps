@@ -14,16 +14,28 @@
       "items": {
         "type": "object",
         "properties": {
-          "sysContraints": {
+          "sysConstraints": {
             "type": "array",
-            "item": {
+            "minItems": 1,
+            "items": {
               "type": "object",
               "properties": {
                 "os": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "linux",
+                    "windows",
+                    "osx"
+                  ]
                 },
                 "flavor": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "ubuntu",
+                    "debian",
+                    "redhat",
+                    "centos"
+                  ]
                 },
                 "arch": {
                   "type": "string"
@@ -45,7 +57,8 @@
                     "arch"
                   ]
                 }
-              ]
+              ],
+              "additionalProperties": false
             }
           },
           "pkgConstraint": {
@@ -127,7 +140,8 @@
               "script"
             ]
           }
-        ]
+        ],
+        "additionalProperties": false
       },
       "minItems": 1
     }
@@ -135,5 +149,6 @@
   "required": [
     "regexp",
     "dependencies"
-  ]
+  ],
+  "additionalProperties": false
 }
