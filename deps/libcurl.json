@@ -1,5 +1,5 @@
 {
-  "regexp": "\blibcurl\b",
+  "regexp": "\\blibcurl\\b",
   "dependencies": [
     {
       "sysPkgs": [
