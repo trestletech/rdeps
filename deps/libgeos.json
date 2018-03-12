@@ -1,0 +1,31 @@
+{
+  "regexp": "\\bGEOS\\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "libgeos-dev"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "debian"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "geos-devel"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}
