@@ -1,0 +1,31 @@
+{
+  "regexp": "\\blibxml2\\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "libxml2-dev"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "debian"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "libxml2-devel"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}
