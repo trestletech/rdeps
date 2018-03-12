@@ -1,0 +1,33 @@
+{
+  "regexp": "\\b(PROJ\\.4|proj\\.maptools\\.org)\\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "libproj-dev"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "debian"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "proj-devel",
+        "proj-epsg",
+        "proj-nad"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}

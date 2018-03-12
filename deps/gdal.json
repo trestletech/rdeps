@@ -1,0 +1,31 @@
+{
+  "regexp": "\\bGDAL\\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "gdal-bin"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "debian"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "gdal"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}
