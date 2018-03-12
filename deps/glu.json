@@ -1,0 +1,31 @@
+{
+  "regexp": "(?i)\\bGLU\\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "libglu1-mesa-dev"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "debian"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "mesa-libGLU-devel"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}

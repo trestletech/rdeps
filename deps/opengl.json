@@ -1,0 +1,31 @@
+{
+  "regexp": "\\bOpenGL\\b",
+  "dependencies": [
+    {
+      "sysPkgs": [
+        "libgl1-mesa-dev"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "ubuntu"
+        },
+        {
+          "flavor": "debian"
+        }
+      ]
+    },
+    {
+      "sysPkgs": [
+        "mesa-libGL-devel"
+      ],
+      "sysConstraints": [
+        {
+          "flavor": "redhat"
+        },
+        {
+          "flavor": "centos"
+        }
+      ]
+    }
+  ]
+}
